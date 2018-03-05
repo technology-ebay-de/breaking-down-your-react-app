@@ -1,4 +1,5 @@
 <!doctype html>
+<!--suppress RequiredAttributes -->
 <html>
 <head>
     <meta charset="utf-8">
@@ -25,10 +26,10 @@
 <div class="reveal">
     <div class="slides">
         <section>
-            <h1>Breaking Down<br>Your React App</h1>
+            <img data-src="images/Breaking_Down_Title.png" class="stretch">
             <p>
                 Patrick Hund<br>
-                Senior Software Engineer<br>
+                Lead Frontend Developer<br>
                 <a href="mailto:pahund@team.mobile.de">pahund@team.mobile.de</a>
             </p>
         </section>
@@ -41,7 +42,7 @@
             <p>
                 <small>
                     Patrick Hund<br>
-                    Senior Software Engineer<br>
+                    Lead Frontend Developer<br>
                     <a href="mailto:pahund@team.mobile.de">pahund@team.mobile.de</a>
                 </small>
             </p>
@@ -56,7 +57,9 @@
     // More info about config & dependencies:
     // - https://github.com/hakimel/reveal.js#configuration
     // - https://github.com/hakimel/reveal.js#dependencies
+    // noinspection JSUnusedGlobalSymbols
     Reveal.initialize({
+        history: true,
         dependencies: [
             { src: 'plugin/markdown/marked.js' },
             { src: 'plugin/markdown/markdown.js' },
