@@ -3,7 +3,7 @@
 Presentation for <a href="https://www.meetup.com/de-DE/eBay-Europe-Technology/events/248331753/">eBay Tech Talk</a>, 
 15<sup>th</sup> March 2018
 
-### 👉 [View the slides online here](https://technology-ebay-de.github.io/working-at-mobilede)
+### 👉 [View the slides online here](https://technology-ebay-de.github.io/breaking-down-your-react-app/)
 
 ## Abstract
 
