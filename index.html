@@ -25,18 +25,144 @@
 <body>
 <div class="reveal">
     <div class="slides">
+        <!-- Introduction -->
         <section>
             <img data-src="images/Breaking_Down_Title.png" class="stretch">
-            <p>
-                Patrick Hund<br>
-                Lead Frontend Developer<br>
-                <a href="https://twitter.com/wiekatz">@wiekatz</a>
-            </p>
+            <small>
+                Patrick Hund | Lead Frontend Developer | <a href="https://twitter.com/wiekatz">@wiekatz</a>
+            </small>
         </section>
+        <section>
+            <div class="PH_TODO">Slide: drawing of green field with blue sky and sun</div>
+            <aside class="notes">
+                This is what every developer loves to have when starting a new project: a nice green field, everything is possible, the magical chance to get things right this time. To use state-of-the-art technology, to build something beautiful that will stand the test of time.
+                And, of course, make the customers very, very happy.
+            </aside>
+        </section>
+        <section>
+            <div class="PH_TODO">Slide: a small castle on the green field</div>
+            <aside class="notes">
+                So, tadaa, our first release. It’s all good, software craftsmanship at its best. Servers running smoothly, high code coverage, only a few bugs and loose ends.
+            </aside>
+        </section>
+        <section>
+            <div class="PH_TODO">Slide: castle has additional towers, turrets and oriels</div>
+            <aside class="notes">
+                So let’s add some more features. Our app is coming along great!
+            </aside>
+        </section>
+        <section>
+            <div class="PH_TODO">Slide: even more additional building, but some cracks in the wall and broken windows</div>
+            <aside class="notes">
+                And some more… but what’s this? Bug rate is increasing? It’s getting harder and harder to understand what’s going on in the code. We should fix that! And fix it we will! Eventually! When we’re done with the next release, or perhaps the one after that, because rolling out those new features is super important!
+            </aside>
+        </section>
+        <section>
+            <div class="PH_TODO">Slide: More buildings, more cracks, more broken windows, tower that is about to tumble propped up with a crutch</div>
+            <aside class="notes">
+                OK, now the developers are fixing some of the problems, but it’s starting to look more and more like we’re just fire fighting, patching up what actually should be torn down and rebuilt from scratch.<br><br>
+                In the many years I’ve been working as a software developer, I’ve seen this happen time and time again. There’s nothing I’m quite as passionate about as finding ways to prevent this phenomenon known as:
+            </aside>
+        </section>
+        <section>
+            <div class="PH_TODO">Slide: The word „Technical Debt", the broken castle picture with low opacity in the background</div>
+            <aside class="notes">
+                Technical Debt.<br><br>
+                While software is actively being worked on, its complexity is constantly increasing, technical debt is accumulated, the software becomes harder and harder to modify without breaking things. At some point, the cost of fixing it is higher than the cost of rewriting it from scratch.
+            </aside>
+        </section>
+        <section>
+            <img data-src="images/Tech_Debt_Graph.png" class="stretch">
+            <aside class="notes">
+                To prevent this, you have to refactor your code base periodically. It’s not just about fixing bugs, it’s about keeping your code clean, about making it consistent.<br><br>
+                It’s OK to make some debt, but you have to make sure you have recurring phases of paying off that debt, lest it become too great and make cleaning up too costly.
+            </aside>
+        </section>
+        <section>
+            <div class="PH_TODO">Slide: pie chart 70% feature time / 30% tech time</div>
+            <aside class="notes">
+                In our team, we dedicate only 70% of our time to building new features and creating value for our customers.<br><br>
+                The remaining 30%, we dedicate to tech time: refactoring, reducing technical debt, but also exploring new tools and technologies, finding new ways to improve our software.
+            </aside>
+        </section>
+        <section>
+            <img data-src="images/React_Logo.png" class="stretch">
+            <aside class="notes">
+                So what does all that have to do with React?<br><br>
+                What makes React so special to me is that it is based on components. You break down your application into neat little parts and work on them separately. You compose your application from building blocks, like Lego bricks.
+            </aside>
+        </section>
+        <section>
+            <div class="PH_TODO">Slide: Slide: Lego bricks, neatly aligned next to each other, labelled “Header”, „Footer“, „Pagination“, „Search Form“, „Item List“, „Picture Gallery“, „Advertising"</div>
+            <aside class="notes">
+                If you use React right, you can create a set of loosely coupled components, with well defined purpose
+            </aside>
+        </section>
+        <section>
+            <div class="PH_TODO">Slide: Slide: Same lego bricks, assembled to create a structure that resembles a web page (🤔 perhaps like a castle, to reference earlier slides?)</div>
+            <aside class="notes">
+                You can use that set of building blocks to build your pages. You can work on each component separately, you can even split them into independent npm packages and versionize them.
+            </aside>
+        </section>
+        <section>
+            <div class="PH_TODO">Slide: Part of the web page structure is renewed by replacing some of the bricks</div>
+            <aside class="notes">
+                If a part of your application needs to be extended or renewed, you can throw away the old components and replace them with shiny, new ones. In the pre-component age, with a tightly coupled, monolithic application, this was expensive and time consuming, much less now.<br><br>
+                🤔 perhaps talk about how we also had reusable components with jQuery, mobile.de home page project, 2015<br><br>
+                React gives us the chance to make this dream come true, but it does not come automatically
+            </aside>
+        </section>
+        <section>
+            <div class="PH_TODO">Slide: „Big ball of mud", 🤔 with Lego bricks</div>
+            <aside class="notes">
+                Just because you are using React doesn’t mean you a clean, well structured codebase automatically. You can create a “big ball of mud" with React just as well as you can with jQuery or anything else.
+            </aside>
+        </section>
+        <section>
+            <div class="PH_TODO">Slide: 70%/30% pie chart revisited</div>
+            <aside class="notes">
+                So our team spends its 30% tech time wisely to make sure components are decoupled and well-defined. We constantly seek ways to improve the modularity of our codebase, to constantly break down our web app into reusable components.
+            </aside>
+        </section>
+
+        <!-- Higher Order Components, Recompose -->
         <section>
             <h3>A Simple Start…</h3>
             <iframe src="https://codesandbox.io/embed/8x349m4y02?fontsize=10&hidenavigation=1&module=%2Fsrc%2FThreadList.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
         </section>
+
+        <!-- MT-UI, Storybook -->
+
+        <section>
+            <div class="PH_TODO">MT-UI, Storybook</div>
+        </section>
+
+        <!-- Monorepos, learning from OpenSource, Pull Requests, "social coding“ -->
+
+        <section>
+            <div class="PH_TODO">Monorepos, learning from OpenSource, Pull Requests, "social coding“ </div>
+        </section>
+
+        <!-- Organizing modules -->
+        <section>
+            <div class="PH_TODO">
+                Organizing modules
+                * In the beginning: organized by functions
+                * Now: organized by modules
+                * Contract: how to organize code
+                * Emphasize: importance of talking to each other
+            </div>
+        </section>
+
+        <!--
+            Bricks / modular toolkit
+            * Rebasing selectors
+        -->
+        <section>
+            <div class="PH_TODO">Bricks, modular toolkit, selectors</div>
+        </section>
+
+        <!-- Summary, End -->
         <section>
             <h2>Thank you!</h2>
             <table class="credits">
