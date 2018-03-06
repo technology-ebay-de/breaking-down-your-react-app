@@ -12,6 +12,7 @@
  */
 html * {
     color-profile: sRGB;
+    /*noinspection CssUnknownProperty*/
     rendering-intent: auto;
 }
 
@@ -291,6 +292,24 @@ body {
     font-size: 0.5em;
     margin-top: -20px;
 }
+
+.reveal .credits {
+    font-size: 66%;
+}
+
+.reveal .credits p {
+    margin: 0;
+}
+
+.reveal .credits .name {
+    color: #d33682;
+}
+
+.reveal .credits .function {
+    font-size: 66%;
+    opacity: 0.4;
+}
+
 
 /*********************************************
  * LINKS
