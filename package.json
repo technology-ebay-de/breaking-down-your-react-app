@@ -1,23 +1,21 @@
 {
   "name": "reveal.js",
-  "version": "3.5.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
-  "subdomain": "revealjs",
-  "main": "js/reveal.js",
+  "version": "1.0.0",
+  "description": "Breaking Down Your React App",
+  "homepage": "https://technology-ebay-de.github.io/breaking-down-your-react-app/",
+  "main": "index.html",
   "scripts": {
-    "test": "grunt test",
     "start": "grunt serve",
-    "build": "grunt"
+    "build": "grunt package"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Patrick Hund",
+    "email": "pahund@team.mobile.de",
+    "web": "https://ebaytech.berlin/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git@github.com:technology-ebay-de/breaking-down-your-react-app.git"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -28,9 +26,6 @@
     "grunt-autoprefixer": "~3.0.3",
     "grunt-cli": "~1.2.0",
     "grunt-contrib-connect": "~0.11.2",
-    "grunt-contrib-jshint": "~0.11.3",
-    "grunt-contrib-qunit": "~1.2.0",
-    "grunt-contrib-uglify": "~0.9.2",
     "grunt-contrib-watch": "~1.0.0",
     "grunt-retire": "~0.3.10",
     "grunt-zip": "~0.17.1",
