@@ -1,7 +1,7 @@
 {
-  "name": "reveal.js",
+  "name": "Breaking Down Your React App",
   "version": "1.0.0",
-  "description": "Breaking Down Your React App",
+  "description": "Presentation for eBay Tech Talk, 15th March 2018",
   "homepage": "https://technology-ebay-de.github.io/breaking-down-your-react-app/",
   "main": "index.html",
   "scripts": {
