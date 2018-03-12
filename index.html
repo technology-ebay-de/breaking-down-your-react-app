@@ -29,7 +29,7 @@
         <section>
             <img data-src="images/Breaking_Down_Title.png" class="stretch">
             <small>
-                Patrick Hund | Lead Frontend Developer | <a href="https://twitter.com/wiekatz">@wiekatz</a>
+                Patrick Hund | Lead Frontend Developer | <a target="_blank" href="https://twitter.com/wiekatz">@wiekatz</a>
             </small>
         </section>
         <section>
@@ -73,6 +73,7 @@
         </section>
         <section>
             <img data-src="images/Tech_Debt_Graph.png" class="stretch">
+            <p><small>(source: <a href="https://www.informatik-aktuell.de/entwicklung/methoden/langlebige-architekturen-technische-schulden-erkennen-und-beseitigen.html">Dr. Carola Lilienthal</a>)</small></p>
             <aside class="notes">
                 To prevent this, you have to refactor your code base periodically. It’s not just about fixing bugs, it’s about keeping your code clean, about making it consistent.<br><br>
                 It’s OK to make some debt, but you have to make sure you have recurring phases of paying off that debt, lest it become too great and make cleaning up too costly.
@@ -126,17 +127,18 @@
         </section>
 
         <!-- Higher Order Components, Recompose -->
-        <section>
-            <h3>A Simple Start…</h3>
-            <iframe src="https://codesandbox.io/embed/8x349m4y02?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNews.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-            <aside class="notes">
-                So here's a basic example for a React component, which we're probably all familiar with from tutorials
-            </aside>
-        </section>
 
         <section>
             <img data-src="images/Break_Down_No_1.png" class="stretch">
             <h2>Separating Logic and Layout</h2>
+        </section>
+        
+        <section>
+            <h3>A Simple Start…</h3>
+            <iframe data-src="https://codesandbox.io/embed/8x349m4y02?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNews.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+            <aside class="notes">
+                So here's a basic example for a React component, which we're probably all familiar with from tutorials
+            </aside>
         </section>
 
         <section>
@@ -146,7 +148,7 @@
 
         <section>
             <h3>Separated Dumb Components</h3>
-            <iframe src="https://codesandbox.io/embed/nnnoyw0jlm?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNews.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+            <iframe data-src="https://codesandbox.io/embed/nnnoyw0jlm?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNews.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
             <aside class="notes">
                 In this new version of my demo, I've broken down my hacker news components in many little presentational components
             </aside>
@@ -158,7 +160,7 @@
 
         <section>
             <h3>Recompose FTW!</h3>
-            <iframe src="https://codesandbox.io/embed/nr6rnwokjj?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNews.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+            <iframe data-src="https://codesandbox.io/embed/nr6rnwokjj?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNews.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
             <aside class="notes">
                 As you can see here, the HackerNews component doesn't have a state anymore, it just has two props for the latest news and an update handler<br><br>
                 These props are passed in by the Container
@@ -167,7 +169,7 @@
 
         <section>
             <h3>Recomposed Spinner</h3>
-            <iframe src="https://codesandbox.io/embed/52pzn06x0x?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNewsContainer.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+            <iframe data-src="https://codesandbox.io/embed/52pzn06x0x?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNewsContainer.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
             <aside class="notes">
                 In this version, I'm removing the last piece of logic from the HackerNews component by putting the spinner in a separate component and letting the container decided which version to render,
                 depending on whether loading the data is done
@@ -176,7 +178,7 @@
 
         <section>
             <h3>Separate Enhancers</h3>
-            <iframe src="https://codesandbox.io/embed/ymzzyn7qjx?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNewsContainer.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+            <iframe data-src="https://codesandbox.io/embed/ymzzyn7qjx?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNewsContainer.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
             <aside class="notes">
                 The nice part about is the composition – if my container becomes too complex, I can split it up into multiple enhancer functions in separate modules
             </aside>
@@ -191,26 +193,43 @@
 
         <section>
             <h3>UI in Separate Repository</h3>
-            <iframe src="https://codesandbox.io/embed/ql8jx0k9r6?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNews.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+            <iframe data-src="https://codesandbox.io/embed/ql8jx0k9r6?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNews.js" class="stretch" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
             <aside class="notes">
-                The nice part about is the composition – if my container becomes too complex, I can split it up into multiple enhancer functions in separate modules
+                <ul>
+                    <li>Separate repo – independent versioning</li>
+                </ul>
             </aside>
         </section>
 
         <section>
             <h3>Component Catalogue with Storybook</h3>
-            <iframe src="./demo-storybook/index.html" class="stretch"></iframe>
+            <iframe data-src="./demo-storybook/index.html" class="stretch"></iframe>
             <aside class="notes">
+                <ul>
+                    <li>Designer can work on the UI independenty</li>
+                    <li>Include README.md from componenents as notes</li>
+                </ul>
             </aside>
         </section>
 
-        <!-- Monorepos, learning from OpenSource, Pull Requests, "social coding“ -->
+        <!-- Organizing modules -->
 
         <section>
-            <div class="PH_TODO">Monorepos, learning from OpenSource, Pull Requests, "social coding“ </div>
+            <img data-src="images/Break_Down_No_3.png" class="stretch">
+            <h2>Organizing Modules</h2>
         </section>
 
-        <!-- Organizing modules -->
+        <section>
+            <h3>Separation of Concerns</h3>
+            <img data-src="images/Separation_of_Concerns.png" class="stretch">
+            <p><small>(source: <a target="_blank" href="http://speakerdeck.com/didoo/let-there-be-peace-on-css">Cristiano Rastelli</a>)</small></p>
+        </section>
+
+        <section>
+            <h3>Before…</h3>
+            <img data-src="images/Organizing_Modules_Before.png" class="stretch box-shadow">
+        </section>
+
         <section>
             <div class="PH_TODO">
                 Organizing modules
@@ -316,10 +335,14 @@
             { src: 'plugin/markdown/marked.js' },
             { src: 'plugin/markdown/markdown.js' },
             { src: 'plugin/notes/notes.js', async: true },
+            { src: 'socket.io/socket.io.js', async: true },
+            { src: 'plugin/notes-server/client.js', async: true },
             {
-                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
-                hljs.initHighlightingOnLoad();
-            }
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
             }
         ]
     });
