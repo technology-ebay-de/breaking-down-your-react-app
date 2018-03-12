@@ -264,11 +264,12 @@
         </section>
 
         <section>
-            <h3>Component Catalogue with Storybook</h3>
+            <h3>Living Styleguide with Storybook</h3>
             <iframe data-src="./demo-storybook/index.html" class="stretch"></iframe>
             <aside class="notes">
                 <ul>
                     <li>Designer can work on the UI independenty</li>
+                    <li>Earlier: Styleguides were outdated the day they were published</li>
                     <li>Include README.md from componenents as notes</li>
                 </ul>
             </aside>
@@ -284,7 +285,8 @@
         <section>
             <h3>Separation of Concerns</h3>
             <figure class="stretch">
-                <img data-src="images/Separation_of_Concerns.png" onclick="this.src = 'images/Separation_of_Concerns_JS.png';">
+                <img data-src="images/Separation_of_Concerns.png"
+                     onclick="this.src = 'images/Separation_of_Concerns_JS.png';">
                 <figcaption>
                     (source: <a target="_blank" href="http://speakerdeck.com/didoo/let-there-be-peace-on-css">Cristiano
                     Rastelli</a>)
@@ -293,17 +295,16 @@
         </section>
 
         <section>
-            <h3>Before…</h3>
-            <img data-src="images/Organizing_Modules_Before.png" class="stretch box-shadow">
-        </section>
-
-        <section>
-            <div class="PH_TODO">
-                Organizing modules
-                * In the beginning: organized by functions
-                * Now: organized by modules
-                * Contract: how to organize code
-                * Emphasize: importance of talking to each other
+            <h3>Before… and After</h3>
+            <div style="display: flex; align-items: center; justify-content: space-around" class="stretch">
+                <div class="box-shadow" style="overflow-y: scroll; overflow-x: hidden; width: 525px; height: 100%; margin-right: 32px; background: #fff;">
+                    <img data-src="images/Dir_Structure_Before.png"
+                         style="margin: 0; width: 525px; height: 1854px; max-width: inherit; max-height: inherit">
+                </div>
+                <div class="box-shadow" style="overflow-y: scroll; overflow-x: hidden; width: 525px; height: 100%; background: #fff;">
+                    <img data-src="images/Dir_Structure_After_Blurred.png" onclick="this.src = 'images/Dir_Structure_After.png';"
+                         style="margin: 0; width: 525px; height: 1854px; max-width: inherit; max-height: inherit">
+                </div>
             </div>
         </section>
 
