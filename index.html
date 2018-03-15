@@ -157,7 +157,9 @@
         </section>
 
         <section>
-            <div class="PH_TODO">Slide: „Big ball of mud", 🤔 with Lego bricks</div>
+            <h3>Big Ball of Mud</h3>
+            <img class="stretch" data-src="images/Big_Ball_of_Mud.png">
+            <h4>React Component Spaghetti</h4>
             <aside class="notes">
                 Just because you are using React doesn’t mean you a clean, well structured codebase
                 automatically. You can create a “big ball of mud" with React just as well as you can with jQuery
@@ -213,7 +215,7 @@
 
         <section>
             <h3>Recompose FTW!</h3>
-            <iframe data-src="https://codesandbox.io/embed/nr6rnwokjj?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNews.js"
+            <iframe data-src="https://codesandbox.io/embed/nr6rnwokjj?fontsize=12&hidenavigation=1&module=%2Fsrc%2FHackerNewsContainer.js"
                     class="stretch"
                     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
             <aside class="notes">
@@ -314,12 +316,17 @@
                     </div>
                 </div>
             </div>
-            <aside class="notes">
-                <ul>
-                    <li>Mention index.js files</li>
-                </ul>
-            </aside>
         </section>
+
+        <section data-background-image="images/Lego_Brick_Background.png" data-background-size="contain">
+            <h2>Contribution Rules</h2>
+            <ul>
+                <li>One main component per Brick</li>
+                <li>One root index.js file provides exports for all modules needed to integrate it</li>
+                <li>Brick has no dependencies to code modules outside, except npm packages</li>
+            </ul>
+        </section>
+
         <section data-background-image="images/Collaboration.png" data-background-size="contain">
             <p>Maintaining a healthy codebase is <em>not</em> a technical task.</p>
             <p>It's a process task.</p>
