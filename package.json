@@ -21,16 +21,15 @@
     "node": ">=4.0.0"
   },
   "devDependencies": {
-    "express": "~4.14.0",
+    "express": "~4.16.3",
     "grunt": "~1.0.1",
     "grunt-autoprefixer": "~3.0.3",
     "grunt-cli": "~1.2.0",
-    "grunt-contrib-connect": "~0.11.2",
+    "grunt-contrib-connect": "~2.0.0",
     "grunt-contrib-watch": "~1.0.0",
-    "grunt-retire": "~1.0.7",
     "grunt-zip": "~0.17.1",
     "mustache": "~2.2.1",
-    "socket.io": "^1.4.8"
+    "socket.io": "^2.1.1"
   },
   "license": "MIT"
 }
