@@ -1,3 +1,5 @@
+![eBay Tech Logo](https://github.com/technology-ebay-de/react-prebid/raw/master/ebay-tech-logo.png "eBay Tech Logo")
+
 # Breaking Down Your React App
 
 Presentation for the <a href="https://www.meetup.com/de-DE/eBay-Europe-Technology/events/248331753/">48<sup>th</sup> eBay Tech Talk</a>, 
