@@ -1,4 +1,4 @@
-![eBay Tech Logo](https://github.com/technology-ebay-de/react-prebid/raw/master/ebay-tech-logo.png "eBay Tech Logo")
+![eBay Tech Logo](images/ebay-tech-logo-wide-light-bgr-small.png "eBay Tech Logo")
 
 # Breaking Down Your React App
 
